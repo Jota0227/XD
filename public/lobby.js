@@ -14,5 +14,6 @@ socket.on('actualizarUsuarios', (usuarios) => {
         const li = document.createElement('li');
         li.textContent = usuario;
         userList.appendChild(li);
+
     });
 });
