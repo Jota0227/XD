@@ -1,0 +1,93 @@
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.form-container {
+    background-color: #575757;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, label {
+    color: #FFFFFF;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.column {
+    border: 1.5px solid #ffffff00; /* Ajustar el color del borde */
+    background-color: #7a696900;
+    padding: 1px;
+    min-width: 200px;
+    max-width: 400px;
+    flex-grow: 1;
+    height: auto; /* Ajuste dinámico de la altura basado en el contenido */
+}
+
+.user-list-container {
+    max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    margin-bottom: 1rem; /* Espacio entre la lista y el botón */
+}
+
+.list-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+/* Cada elemento de la lista (jugador) */
+.list-group li {
+    border: 1px solid #fff;
+    padding: 15px;
+    background-color: #c5c1c1;
+    color: #000000;
+}
+
+.row {
+    height: 100vh;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;  
+    margin-bottom: 20px;
+}
+
+.list-group li:nth-child(even) {
+    background-color: rgb(95, 95, 95);
+} 
+
+.list-group li:nth-child(odd) {
+    background-color: rgb(63, 63, 63);
+}
+
+.container-center {
+    position: fixed; /* Fija el contenedor a la izquierda */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición */
+}
+
+/* Estilo para el botón, si necesitas agregar personalización */
+.btn {
+    width: 100%; /* Botón a 100% del ancho del contenedor */
+}
